@@ -1,0 +1,37 @@
+Which kind of code do you write when using React.js?
+Declarative JS code
+
+What is JSX ?
+Is syntax sugar for React createElement(elem,props,children). React is creating elements under the hood. JSX allows us to write HTML elements in JavaScript and place them in the DOM without any createElement() and/or appendChild() methods. In the past React was imported in all the component files.
+It's a special non standard syntax enabled in React projects.
+
+Why is React about components ?
+"Components" are really just a way of thinking about user interfaces. React embraces that concept and gives you tools to build components that you can then combine.
+Every UI in the end is made up of multiple components, so it makes sense to think as a combination of components.
+
+What does "declarative" mean?
+You define the target "state" (UI) and React figures out which JS commands need to be executed to bring that result to life.
+
+What is a "React Component"?
+A component is just that: A JS function that typically returns some HTML (or, to be precise: JSX) code which will be shown on the screen when that component is used.
+
+React tree node ?
+You build a component tree that has one root node and mounted into a DOM node.
+
+What does "component tree" mean?
+You build a tree by nesting components into each other - just as you build a HTML tree when building a standard HTML document.
+
+How do you pass data between components?
+Via custom htlm attributes called props.
+
+How can you output dynamic data in React components (i.e. in the returned JSX code)?
+You can't put block statements (e.g. if statements) between those curly braces but you can output any result of any JS expression by using this special feature. { }
+
+Which value should you pass to event listener props like onClick?
+you want to pass a "pointer" at the to-be-executed function as a value to onClick etc. Then, this function gets executed "on your behalf" by React when the event occurs.
+
+How can you communicate from one of your components to a parent (i.e. higher level) component?
+You can accept a function via props and call it from inside the child component to trigger an action in the parent component.
+
+Why do you need this extra "state" concept instead of regular JS variables which you change and use?
+JS variables don't cause react to re-evaluate components.
