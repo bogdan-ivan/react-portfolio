@@ -1,0 +1,7 @@
+app crated with 
+
+npx create-react-app my-app --template @ui5/cra-template-webcomponents-react
+
+steps from 
+
+https://developers.sap.com/tutorials/ui5-webcomponents-react-introduction.html
