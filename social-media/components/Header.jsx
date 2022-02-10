@@ -35,6 +35,7 @@ const Header = () => {
             objectFit="contain"
             onClick={() => router.push('/')}
           />
+          {/* <img src="https://i.imgur.com/wEOWkhu.png" alt="" className='object-contain h-12' /> */}
         </div>
         <div className="relative w-10 lg:hidden flex-shrink-0 cursor-pointer">
           <Image

@@ -11,7 +11,7 @@ export default function Topbar() {
     <div className="topbarContainer">
       <div className="topbarLeft">
         <Link to="/" style={{ textDecoration: "none" }}>
-          <span className="logo">Lamasocial</span>
+          <span className="logo">Social</span>
         </Link>
       </div>
       <div className="topbarCenter">
@@ -48,7 +48,7 @@ export default function Topbar() {
           <img
             src={
               user.profilePicture
-                ? PF + user.profilePicture
+                ? PF + "person/" + user.profilePicture
                 : PF + "person/noAvatar.png"
             }
             alt=""

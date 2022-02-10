@@ -15,7 +15,7 @@ const AppShellBar = () => {
     };
     return (
         <ShellBar
-            primaryTitle="UI5 Web Components for React Template"
+            primaryTitle="UI5 Statistics Doashboard"
             logo={<img src={logo} />}
             profile={<Avatar><img src={avatar} /></Avatar>}
             onLogoClick={handleOnClickLogo}>
