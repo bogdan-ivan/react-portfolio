@@ -1,12 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import TextField from './components/TextField';
+import React from "react";
+import { Counter } from "./components/Counter";
+import TextField from "./components/TextField";
 
 function App() {
   return (
-    <div className="App">
-      <TextField text='Hello'/>
+    <div>
+      <TextField text="Hello" handleChange={(e) => {}} />
+      <Counter>
+        {(count, setCount) => (
+          <div>
+            {count}
+            <button onClick={() => setCount(count + 1)}>Add</button>
+          </div>
+        )}
+      </Counter>
     </div>
   );
 }
